@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+}
+
+body{
+    background-color: #F3F5FC;
+    ;
+}
+
+header{
+    height: 15%;
+    height: 10vh;
+}
+
+#logo-alura{
+    margin: 5vh 0 0 10vh
+}
+
+main{
+    height: 85%;
+    display: flex;
+    justify-content:space-around
+}
+
+.bloco-1 p{
+    margin: 0 0 0 15vh;
+}
+
+#btn-encriptar{
+    margin: 2vh 0 0 15vh;
+    height: 6vh;
+    width: 15vw;
+    border-radius: 12px;
+    background-color: #0A3871;
+    color: white;
+    border: #0A3871;
+}
+
+#btn-desencriptar{
+    margin: 2vh 0 0 4vh;
+    height: 6vh;
+    width: 15vw;
+    border-radius: 12px;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+}
+
+.text-area{
+    height: 60vh;
+    width: 45vw;
+    margin: 8vh 0 0 15vh;
+    background-color:#F3F5FC;
+    resize: none;
+    color: #0A3871;
+    font-size: 2rem;
+}
+
+::placeholder{color: #0A3871;}
+    .text-area:focus{
+        box-shadow: 0 0 0 0;
+        border: 0 none;
+        outline: none;
+        
+    }
+
+.bloco-2{
+    padding-top: 5vh;
+    align-items: center;
+    display: flex;
+    flex-direction:column;
+    background-color: white;  
+    height: 70vh;
+    width: 25vw;
+    border: none;
+    border-radius: 24px;
+    margin: 0 auto;
+}
+
+.resposta{
+    background-color: white;
+    border: none;
+    height: 65vh;
+    width: 20vw;
+    background-image: url(./assets/High\ quality\ products\ 1\ 1.png);
+    background-repeat: no-repeat;
+    resize: none;
+}
+
+.resposta:focus{
+    outline: none;
+}
+
+.resposta p{
+    text-align: center;
+    margin: 0 2.5vw 0 2.5vw;
+}
+
+.btn-copiar{
+    background-color: white;
+    color: #0A3871;
+    border: solid 1px #0A3871;
+    border-radius: 12px;
+    height: 6vh;
+    width: 15vw;
+    margin-bottom: 5vh;
+}
+
+@media screen and (min-device-width : 481px) and (max-device-width : 800px) {
+    /* tablets */
+
+    header{
+        height: 15vh;
+    }
+
+    main{
+        flex-direction: column;
+        height: 120vh;
+    }
+
+    #logo-alura{
+        margin: 5vh 0 0 3vh
+    }
+
+    .text-area{
+        margin: 2vh 2vh 0 3vh;
+        width: 90%;
+        height: 50vh;
+      
+    }
+
+    .bloco-1 > p{
+        margin-left: 3vh;
+    }
+
+    #btn-encriptar{
+        margin: 2vh 0 0 3vh;
+        height: 6vh;
+        width: 42vw;
+       
+    }
+    
+    #btn-desencriptar{
+        margin: 2vh 0 0 3vh;
+        height: 6vh;
+        width: 42vw;
+        
+    }
+
+    .bloco-2{
+        display: flex;
+        height: 40vh;
+        width: 89vw;
+        margin: 4vh 0 2vh 3vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .resposta{
+        height: 75%;
+        width: 90%;
+    }
+
+    .btn-copiar{
+        width: 90%;
+        margin-bottom: 0;
+        border-radius: 15px;
+    }
+}
+
+@media screen and (max-device-width : 480px) {
+/* celulares */
+    main{
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    #logo-alura{
+        margin: 3vh 0 0 2vh;
+        height: 5vh;
+    }
+
+    .bloco-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-area{
+    width: 80%;
+    height: 30vh;
+    margin: 2vh 0;
+    }
+
+    #btn-encriptar{
+        margin: 0;
+        height: 6vh;
+        width: 39vh;
+    
+    }
+
+    #btn-desencriptar{
+        margin: 2vh 0;
+        height: 6vh;
+        width: 39vh;
+        
+    }
+
+    .bloco-1 p{
+        font-size: 0.7rem;
+        margin-left: 2vh;
+    }
+
+    .bloco-2{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        width: 90%;
+        height: 36vh;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .resposta{
+        height: 70%;
+        width: 90%;
+        background-image: none;
+    }
+
+    .btn-copiar{
+        margin: 2vh 0;
+        height: 6vh;
+        width: 39vh;
+    }
+    
+}
